@@ -1,0 +1,6 @@
+# ignore files in the tmp folder
+tmp/*
+# don't ignore the tmp folder
+!tmp/
+# ignore emacs backup
+*~
