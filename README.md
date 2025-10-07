@@ -2,7 +2,7 @@
 
 This package provides **Time-based One-Time Password (TOTP)** two-factor authentication (2FA) for OpenACS / NaviServer applications, compatible with **Google Authenticator** and similar apps (Authy, Microsoft Authenticator, FreeOTP, etc.).
 
-It integrates seamlessly into the OpenACS authentication flow and uses the built-in `ns_totp` command from NaviServer and 'qrencode' CLI via 'exec'.
+It integrates seamlessly into the OpenACS authentication flow and uses the built-in `ns_totp` command from NaviServer and `qrencode` CLI via `exec`.
 
 ---
 
