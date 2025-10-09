@@ -2,3 +2,4 @@
 *.png
 # don't ignore the tmp folder
 !tmp/
+!tmp/.gitkeep
