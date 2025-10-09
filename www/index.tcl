@@ -10,7 +10,7 @@ set title "Multi Factor Authentication"
 set user_id [auth::require_login]
 
 set page_title $title
-set context [list $page_title]
+set context $page_title
 
 set buttons [list [list "Please choose one" new]]
 
@@ -21,8 +21,9 @@ ad_form -name mfa \
         -form {
 
     {mfa_p:boolean(radio)
-        {options {{"No, I don't want" f} {"Yes, I do" t} }}
+        {options {{"No" f} {"Yes" t} }}
         {label {Do you want to start using MFA?}}
+	{help_text {If you select "Yes" you will be rediirected to the MFA setup page, else to the site's Home Page}}
     }
 
 } -on_submit {

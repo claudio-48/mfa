@@ -1,6 +1,4 @@
-# ignore files in the tmp folder
-tmp/*
+# ignore png files 
+*.png
 # don't ignore the tmp folder
 !tmp/
-# ignore emacs backup
-*~
