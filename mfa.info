@@ -8,18 +8,21 @@
     <singleton-p>f</singleton-p>
     <implements-subsite-p>f</implements-subsite-p>
     <inherit-templates-p>t</inherit-templates-p>
-    
+
     <version name="2.1.1" url="http://openacs.org/repository/download/apm/mfa-2.1.1.apm">
         <owner url="mailto:claudio.pasolini@gmail.com">Claudio Pasolini</owner>
-        <summary>Multi Factor Authentication via Google Authenticator.</summary>
+        <summary>Multi Factor Authentication via Google Authenticator or Authy.</summary>
         <release-date>2025-09-27</release-date>
         <vendor url="www.oasisoftware.com">Oasi Software</vendor>
-        <description format="text/html">Multi Factor Authentication via Google Authenticator.</description>
+        <description format="text/html">Multi Factor Authentication via Google Authenticator or Authy.</description>
         <maturity>0</maturity>
 
         <provides url="mfa" version="2.1.1"/>
 
+        <callbacks>
+        </callbacks>
         <parameters>
+            <parameter scope="instance" datatype="number"  min_n_values="1"  max_n_values="1"  name="enforce_2fa_p"  default="0" description="The parameter determines whether the 2FA is mandatory for all users (0=No, 1=yes)." section_name="MFA"/>
         </parameters>
 
     </version>

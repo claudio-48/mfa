@@ -5,9 +5,9 @@
 
 <h2>Two Factor Authentication Setup</h2>
 
-<if @qrcode_p;noquote@ true>
+<if @qrcode_p;noquote@ true and @verified_p@ false>
   <p>Please scan the QR code with Google Authenticator or Authy:</p>
-  <img src="tmp/mfa_qr_@user_id;noquote@.png" alt="QR code" width="200" heigth="200" />
+  <img src="/mfa/tmp/mfa_qr_@user_id;noquote@.png" alt="QR code" width="200" heigth="200" />
 </if>
 
 <div>
